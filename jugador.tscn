@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://brtnsi6x837br"]
+
+[ext_resource type="Script" uid="uid://bwnc0rbe3eqrs" path="res://pare.gd" id="1_omvyu"]
+[ext_resource type="Texture2D" uid="uid://buaytryms38kl" path="res://mono joc.webp" id="2_omvyu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gb6cu"]
+size = Vector2(54, 52)
+
+[node name="jugador" type="CharacterBody2D"]
+script = ExtResource("1_omvyu")
+
+[node name="pare" type="Sprite2D" parent="."]
+position = Vector2(0, -1.90735e-06)
+scale = Vector2(0.0828125, 0.141666)
+texture = ExtResource("2_omvyu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gb6cu")

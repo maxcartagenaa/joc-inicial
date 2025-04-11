@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2a82drte7wk3"]
+
+[ext_resource type="Texture2D" uid="uid://b2pgsfneb6ppa" path="res://toppng.com-dibujo-hierba-png-grass-pasto-vector-885x252.png" id="1_evcrw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_30b44"]
+size = Vector2(1190, 8)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(55.536, -18)
+scale = Vector2(0.199914, 0.134454)
+texture = ExtResource("1_evcrw")
+region_enabled = true
+region_rect = Rect2(0, 0, 2.22137e+06, 238)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(572, -1)
+shape = SubResource("RectangleShape2D_30b44")
+debug_color = Color(0, 0.608312, 0.649318, 0.42)

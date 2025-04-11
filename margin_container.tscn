@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://be1evdi3yovn"]
+
+[ext_resource type="FontFile" uid="uid://dd1q2rifus0x" path="res://PixelOperatorMono8-Bold.ttf" id="1_r6qsq"]
+
+[node name="IntefazDeUsuario" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="LabelPuntos" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_r6qsq")
+text = "Punts: "

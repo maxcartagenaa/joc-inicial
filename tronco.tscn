@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf3b52mc32j2f"]
+
+[ext_resource type="Texture2D" uid="uid://d2hvp18nsg82n" path="res://tronco2.webp" id="1_075cd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kykxy"]
+size = Vector2(210, 48)
+
+[node name="tronco" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_kykxy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -1)
+scale = Vector2(0.431641, 0.268188)
+texture = ExtResource("1_075cd")

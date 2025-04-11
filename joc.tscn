@@ -1,0 +1,106 @@
+[gd_scene load_steps=10 format=3 uid="uid://bylkqqk52a0dn"]
+
+[ext_resource type="Script" uid="uid://chq4v4np40ip4" path="res://Juego.gd" id="1_0st08"]
+[ext_resource type="PackedScene" uid="uid://brtnsi6x837br" path="res://jugador.tscn" id="1_ncd8m"]
+[ext_resource type="Texture2D" uid="uid://b1kdmwf51sjxt" path="res://jungla.jpg" id="1_x1pvp"]
+[ext_resource type="PackedScene" uid="uid://qjbjv50pup53" path="res://paret.tscn" id="2_gdy83"]
+[ext_resource type="PackedScene" uid="uid://bgj8kw4gmebd7" path="res://area_2d.tscn" id="3_gdy83"]
+[ext_resource type="PackedScene" uid="uid://d2a82drte7wk3" path="res://terra.tscn" id="4_bn2ci"]
+[ext_resource type="PackedScene" uid="uid://fft3x6ot3mt5" path="res://tronc.tscn" id="5_0o1sf"]
+[ext_resource type="PackedScene" uid="uid://8mwiqptvsqmf" path="res://tronc_llarg.tscn" id="6_js8yg"]
+[ext_resource type="PackedScene" uid="uid://be1evdi3yovn" path="res://margin_container.tscn" id="8_xycfj"]
+
+[node name="joc" type="Node2D"]
+position = Vector2(23, 45)
+script = ExtResource("1_0st08")
+
+[node name="fondo" type="Sprite2D" parent="."]
+position = Vector2(578.5, 282)
+scale = Vector2(2.02124, 1.64988)
+texture = ExtResource("1_x1pvp")
+
+[node name="jugador" parent="." instance=ExtResource("1_ncd8m")]
+position = Vector2(398, 515)
+
+[node name="paret" parent="." instance=ExtResource("2_gdy83")]
+position = Vector2(-184, -36)
+
+[node name="paret2" parent="." instance=ExtResource("2_gdy83")]
+position = Vector2(998, -9)
+
+[node name="Area2D" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(9, 266)
+
+[node name="Area2D2" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(348, 243)
+
+[node name="Area2D3" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(700, 52)
+
+[node name="Area2D4" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(698, 208)
+
+[node name="Area2D5" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(587, 468)
+
+[node name="Area2D7" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(506, 10)
+
+[node name="Area2D10" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(164, 261)
+
+[node name="Area2D8" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(231, 15)
+
+[node name="Area2D6" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(1019, 91)
+
+[node name="Area2D9" parent="." instance=ExtResource("3_gdy83")]
+position = Vector2(1040, 235)
+
+[node name="terra" parent="." instance=ExtResource("4_bn2ci")]
+position = Vector2(-28, 608)
+
+[node name="tronc" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(161, 507)
+
+[node name="tronc2" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(310, 423)
+
+[node name="tronc3" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(785, 527)
+
+[node name="tronc4" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(541, 137)
+
+[node name="tronc5" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(260, 303)
+
+[node name="tronc6" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(1040, 281)
+
+[node name="tronc7" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(50, 403)
+
+[node name="tronc8" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(418, 215)
+
+[node name="tronc9" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(869, 457)
+
+[node name="tronc10" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(524, 374)
+
+[node name="tronc llarg" parent="." instance=ExtResource("6_js8yg")]
+position = Vector2(379, -3)
+
+[node name="tronc llarg2" parent="." instance=ExtResource("6_js8yg")]
+position = Vector2(859, 157)
+
+[node name="tronc11" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(961, 379)
+
+[node name="tronc12" parent="." instance=ExtResource("5_0o1sf")]
+position = Vector2(697, 8)
+
+[node name="MarginContainer" parent="." instance=ExtResource("8_xycfj")]
