@@ -17,6 +17,18 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = 0
 	move_and_slide()
+	if velocity.x > 0:
+		$pare.visible = true
+		$pare2.visible = false
+		$pare3.visible = false
+	if velocity.x < 0:
+		$pare2.visible = true
+		$pare.visible = false 
+		$pare3.visible = false
+	if velocity.x == 0:
+		$pare3.visible = true
+		$pare2.visible = false
+		$pare.visible = false
 	
  
 
